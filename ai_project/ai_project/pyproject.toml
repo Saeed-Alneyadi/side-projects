@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-project"
+version = "0.1.0"
+description = "Starter template for Python AI projects"
+authors = [{name="Your Name"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scikit-learn>=1.3",
+    "pydantic>=2.6",
+    "python-dotenv>=1.0",
+    "joblib>=1.3",
+    "typer>=0.12.0",
+    "rich>=13.7",
+    "loguru>=0.7",
+    "streamlit>=1.37"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "black>=24.0", "ruff>=0.5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
